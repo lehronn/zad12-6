@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var url = 'https://restcountries.eu/rest/v1/name/';
+  var url = 'https://restcountries.eu/rest/v2/name/';
   var countriesList = $('#countries');
 
   $('#search').click(searchCountries);
@@ -23,6 +23,7 @@ $(document).ready(function(){
       $('<p class="region">').text('Region: ' + item.region).appendTo(country);
       $('<p class="capital">').text('Capital: ' + item.capital).appendTo(country);
       $('<p class="translations">').text('Translations: ' + item.translations.de + ', ' + item.translations.es + ', ' + item.translations.fr + ', ' + item.translations.ja + ', ' + item.translations.it).appendTo(country);
+      $('<p>').html('<img class="flag" src="' + item.flag + '">').appendTo(country);
       $(country).appendTo(countriesList);
     });
   }

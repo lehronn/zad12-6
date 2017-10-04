@@ -5,7 +5,6 @@ body {
 div.countries {
   background-color: black;
   color: white;
-  text-align: left;
   line-height: 1,1em;
   width: 500px;
   padding: 5px;
@@ -22,6 +21,17 @@ div.country {
   font-weight: bold;
   text-align: center;
   padding: 5px;
+}
+
+p .flag {
+  margin: auto;
+  text-align: center;
+}
+
+.flag {
+  width: 250px;
+  margin: auto;
+  text-align: center;
 }
 
 p {
