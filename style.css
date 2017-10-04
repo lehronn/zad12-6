@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+}
+
+div.countries {
+  background-color: black;
+  color: white;
+  text-align: left;
+  line-height: 1,1em;
+  width: 500px;
+  padding: 5px;
+  margin: auto;
+}
+
+div.country {
+  margin: 10px;
+  background-color: gray;
+}
+
+.name {
+  size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding-left: 10px;
+}

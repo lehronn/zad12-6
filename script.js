@@ -17,7 +17,13 @@ $(document).ready(function(){
   function showCountriesList(resp) {
     countriesList.empty();
     resp.forEach(function(item) {
-      $('<li>').text(item.name).appendTo(countriesList);
+      var country = $('<div id="country" class="country">');
+      $('<p class="name">').text(item.name).appendTo(country);
+      $('<p class="nativename">').text('Native name: ' + item.nativeName).appendTo(country);
+      $('<p class="region">').text('Region: ' + item.region).appendTo(country);
+      $('<p class="capital">').text('Capital: ' + item.capital).appendTo(country);
+      $('<p class="translations">').text('Translations: ' + item.translations.de + ', ' + item.translations.es + ', ' + item.translations.fr + ', ' + item.translations.ja + ', ' + item.translations.it).appendTo(country);
+      $(country).appendTo(countriesList);
     });
   }
 
